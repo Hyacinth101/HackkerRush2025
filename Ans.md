@@ -22,6 +22,8 @@ So, the code there was: `HRCTF{@LW@Y$_U$3_$TR0N6_P@$$W0RD}`
 
 ## Crypto
 `~predict_the_future~ astrotalk`
+We initially tried all standard TOTP approaches—various key encodings, SHA algorithms, timestep intervals (15s to 10h), and full year brute-force—without success. Ultimately, the correct sequence was found by reverse-engineering the given OTPs to derive the exact parameters: SHA512, 45 time interval 
 
-
-
+`Strategies that date back more than a millenium`
+After going from the Anonymus COmplait Form at Election Commission Website- we get two links which are base64 encoded `aHR0cHM6Ly9saWNoZXNzLm9yZy9sY3M4QkVQYg==` which is: `https://lichess.org/lcs8BEPb` and `aHR0cHM6Ly9saWNoZXNzLm9yZy9tMzJQUmlScA==` which is `https://lichess.org/m32PRiRp` There was a chess game there, wherein we had to analyse the moves. After going through countless combinaions, looking at the mistakes/blunders/etc. - IChess PGN moves → Index of legal moves → Binary → ASCII bytes → Flag text
+`HRCTF{7h15_15_345y_1f_y0u_kn0w_wh3r3_70_f1nd_17}`
